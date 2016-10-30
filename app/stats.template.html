@@ -1,0 +1,28 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3>Crime Figures for {{chosenStateName}}</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-xs-12 col-md-7">
+                <div class="list-group">
+                    <div class="list-group-item crime-murder">
+                        <h4 class="list-group-item-heading">Murder Arrests <span class="badge">{{chosenStateMurder}}</span></h4>
+                    </div>
+                    <div class="list-group-item crime-assault">
+                        <h4 class="list-group-item-heading">Assault Arrests <span class="badge">{{chosenStateAssault}}</span></h4>
+                    </div>
+                    <div class="list-group-item crime-urbanpop">
+                        <h4 class="list-group-item-heading">Urban Pop Arrests <span class="badge">{{chosenStateUrbanPop}}</span></h4>
+                    </div>
+                    <div class="list-group-item crime-rape">
+                        <h4 class="list-group-item-heading">Rape Arrests <span class="badge">{{chosenStateRape}}</span></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-5">
+                <span [className]="chosenStateClass" id="stateMapIcon"></span>
+            </div>
+        </div>
+    </div>
+</div>

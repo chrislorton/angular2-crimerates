@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-xs-12 col-md-7">
+        <form>
+            <label class="formTitle">{{title}}</label>
+            <select class="form-control input-lg" (change)="onChange($event.target.value)">
+                <option selected disabled>Choose a State</option>
+                <option *ngFor = "#state of states" [id]="state.State" [value]="state.id">{{state.State}}</option>
+            </select>
+        </form>
+    </div>
+</div>
+<div *ngIf="chosenID != null" class="statsContainer">
+    <stats chosenStateID="{{chosenID}}" chosenStateName="{{chosenStateName}}" chosenStateClass="{{chosenStateClass}}" chosenStateMurder="{{chosenStateMurder}}" chosenStateAssault="{{chosenStateAssault}}" chosenStateUrbanPop="{{chosenStateUrbanPop}}" chosenStateRape="{{chosenStateRape}}"></stats>
+</div>

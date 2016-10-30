@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'StateFace';
+    src: url('fonts/StateFace-Regular-webfont.eot');
+    src: url('fonts/StateFace-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/StateFace-Regular-webfont.woff') format('woff'),
+         url('fonts/StateFace-Regular-webfont.ttf') format('truetype'),
+         url('fonts/StateFace-Regular-webfont.svg#statefaceregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background: rgb(242,249,254); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(242,249,254,1) 0%, rgba(214,240,253,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fe', endColorstr='#d6f0fd',GradientType=0 ); /* IE6-9 */
+    background-image:url('img/bg.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding:2rem;
+}
+h1, h2, h3 {
+    font-family:'Montserrat';
+}
+h1 {
+    color:white;
+    padding-bottom:1rem;
+    margin-bottom:2rem;
+    border-bottom:solid 1px white;
+    text-transform:uppercase;
+}
+h3 {
+    margin:1rem 0;
+}
+.statsContainer {
+    position:relative;
+}
+.list-group {
+    margin-bottom:0;
+}
+.list-group-item {
+    padding: 25px 15px;
+    border-radius:0 !important;
+}
+.list-group-item.crime-murder .badge {
+    background:darkred;
+}
+.list-group-item.crime-assault .badge {
+    background:darkgoldenrod;
+}
+.list-group-item.crime-urbanpop .badge {
+    background:green;
+}
+.list-group-item.crime-rape .badge{
+    background:dodgerblue;
+}
+.list-group-item-heading {
+    margin-bottom:0;
+}
+.statsContainer {
+    margin-top:1.5rem;
+}
+.panel {
+    border-radius:0;
+    -webkit-box-shadow: 10px 10px 60px 13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 60px 13px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 60px 13px rgba(0,0,0,0.75);
+}
+.formTitle {
+    color:#fff;
+    font-family:'Montserrat';
+}
+.badge {
+    float:right;
+    font-size:25px;
+    margin-top:-5px;
+    font-family:'Montserrat';
+}
+#stateMapIcon {
+    position:relative;
+    display:block;
+    height:280px;
+    width:280px;
+    margin:0 auto;
+    background-size:cover;
+    background-position:center center;
+}
+#stateMapIcon.Alabama {
+    background-image:url('img/icons/Alabama.jpg');
+}
+#stateMapIcon.Alaska {
+    background-image:url('img/icons/Alaska.jpg');
+}
+#stateMapIcon.Arizona {
+    background-image:url('img/icons/Arizona.jpg');
+}
+#stateMapIcon.Arkansas {
+    background-image:url('img/icons/Arkansas.jpg');
+}
+#stateMapIcon.California {
+    background-image:url('img/icons/California.jpg');
+}
+#stateMapIcon.Colorado {
+    background-image:url('img/icons/Colorado.jpg');
+}
+#stateMapIcon.Connecticut {
+    background-image:url('img/icons/Connecticut.jpg');
+}
+#stateMapIcon.Delaware {
+    background-image:url('img/icons/Delaware.jpg');
+}
+#stateMapIcon.Florida {
+    background-image:url('img/icons/Florida.jpg');
+}
+#stateMapIcon.Georgia {
+    background-image:url('img/icons/Georgia.jpg');
+}
+#stateMapIcon.Hawaii {
+    background-image:url('img/icons/Hawaii.jpg');
+}
+#stateMapIcon.Idaho {
+    background-image:url('img/icons/Idaho.jpg');
+}
+#stateMapIcon.Illinois {
+    background-image:url('img/icons/Illinois.jpg');
+}
+#stateMapIcon.Indiana {
+    background-image:url('img/icons/Indiana.jpg');
+}
+#stateMapIcon.Iowa {
+    background-image:url('img/icons/Iowa.jpg');
+}
+#stateMapIcon.Kansas {
+    background-image:url('img/icons/Kansas.jpg');
+}
+#stateMapIcon.Kentucky {
+    background-image:url('img/icons/Kentucky.jpg');
+}
+#stateMapIcon.Louisiana {
+    background-image:url('img/icons/Louisiana.jpg');
+}
+#stateMapIcon.Maine {
+    background-image:url('img/icons/Maine.jpg');
+}
+#stateMapIcon.Maryland {
+    background-image:url('img/icons/Maryland.jpg');
+}
+#stateMapIcon.Massachusetts {
+    background-image:url('img/icons/Massachusetts.jpg');
+}
+#stateMapIcon.Michigan {
+    background-image:url('img/icons/Michigan.jpg');
+}
+#stateMapIcon.Minnesota {
+    background-image:url('img/icons/Minnesota.jpg');
+}
+#stateMapIcon.Mississippi {
+    background-image:url('img/icons/Mississippi.jpg');
+}
+#stateMapIcon.Missouri {
+    background-image:url('img/icons/Missouri.jpg');
+}
+#stateMapIcon.Montana {
+    background-image:url('img/icons/Montana.jpg');
+}
+#stateMapIcon.Nebraska {
+    background-image:url('img/icons/Nebraska.jpg');
+}
+#stateMapIcon.Nevada {
+    background-image:url('img/icons/Nevada.jpg');
+}
+#stateMapIcon.NewHampshire {
+    background-image:url('img/icons/NewHampshire.jpg');
+}
+#stateMapIcon.NewJersey {
+    background-image:url('img/icons/NewJersey.jpg');
+}
+#stateMapIcon.NewMexico {
+    background-image:url('img/icons/NewMexico.jpg');
+}
+#stateMapIcon.NewYork {
+    background-image:url('img/icons/NewYork.jpg');
+}
+#stateMapIcon.NorthCarolina {
+    background-image:url('img/icons/NorthCarolina.jpg');
+}
+#stateMapIcon.NorthDakota {
+    background-image:url('img/icons/NorthDakota.jpg');
+}
+#stateMapIcon.Ohio {
+    background-image:url('img/icons/Ohio.jpg');
+}
+#stateMapIcon.Oklahoma {
+    background-image:url('img/icons/Oklahoma.jpg');
+}
+#stateMapIcon.Oregon {
+    background-image:url('img/icons/Oregon.jpg');
+}
+#stateMapIcon.Pennsylvania {
+    background-image:url('img/icons/Pennsylvania.jpg');
+}
+#stateMapIcon.RhodeIsland {
+    background-image:url('img/icons/RhodeIsland.jpg');
+}
+#stateMapIcon.SouthCarolina {
+    background-image:url('img/icons/SouthCarolina.jpg');
+}
+#stateMapIcon.SouthDakota {
+    background-image:url('img/icons/SouthDakota.jpg');
+}
+#stateMapIcon.Tennessee {
+    background-image:url('img/icons/Tennessee.jpg');
+}
+#stateMapIcon.Texas {
+    background-image:url('img/icons/Texas.jpg');
+}
+#stateMapIcon.Utah {
+    background-image:url('img/icons/Utah.jpg');
+}
+#stateMapIcon.Vermont {
+    background-image:url('img/icons/Vermont.jpg');
+}
+#stateMapIcon.Virginia {
+    background-image:url('img/icons/Virginia.jpg');
+}
+#stateMapIcon.Washington {
+    background-image:url('img/icons/Washington.jpg');
+}
+#stateMapIcon.WestVirginia {
+    background-image:url('img/icons/WestVirginia.jpg');
+}
+#stateMapIcon.Wisconsin {
+    background-image:url('img/icons/Wisconsin.jpg');
+}
+#stateMapIcon.Wyoming {
+    background-image:url('img/icons/Wyoming.jpg');
+}
